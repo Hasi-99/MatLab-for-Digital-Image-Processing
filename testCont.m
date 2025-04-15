@@ -1,0 +1,16 @@
+I = imread('./images/lenna.png');
+J = contrast(I,0.5);
+h1 = histogram(I);
+h2 = histogram(J);
+subplot(2,2,1);
+imshow(rgb2gray(I));
+hold on;
+subplot(2,2,2);
+plot(h1);
+hold on;
+subplot(2,2,3);
+imshow(J);
+hold on;
+subplot(2,2,4);
+plot(h2);
+hold on;
