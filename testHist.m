@@ -1,10 +1,7 @@
 I = imread('./images/lenna.png');
 h = histogram(I);
-subplot(1,3,1);
-imshow(I);
-hold on;
-subplot(1,3,2);
+subplot(1,2,1);
 imshow(rgb2gray(I));
 hold on;
-subplot(1,3,3);
+subplot(1,2,2);
 plot(h)
