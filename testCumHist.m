@@ -1,0 +1,11 @@
+I = imread('./images/lenna.png');
+h1 = histogram(I);
+h2 = cumulativeHistogram(h1);
+subplot(1,3,1);
+imshow(rgb2gray(I));
+hold on;
+subplot(1,3,2);
+plot(h1);
+hold on;
+subplot(1,3,3);
+plot(h2);
